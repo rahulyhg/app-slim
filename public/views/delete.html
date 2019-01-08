@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<head>
+  <title>Delete</title>
+  <meta name="viewport" content="initial-scale=1.0" />
+  <meta charset="utf-8" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+    <ul class="nav nav-tabs item-center" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="/php/list.php" role="tab" aria-controls="home" aria-selected="true">Listar usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="/create.html" role="tab" aria-controls="home" aria-selected="true">Crear Usuario</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="/update.html" role="tab" aria-controls="profile" aria-selected="false">Editar Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="/delete.html" role="tab" aria-controls="contact" aria-selected="false">Eliminar Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="contact-tab" data-toggle="tab" href="/login.html" role="tab" aria-controls="contact" aria-selected="false">Cerrar sesion</a>
+      </li>
+    </ul>
+    <br />
+    <form action="/php/delete.php" method="post">
+      <div class="form-group">
+          <label for="formGroupExampleInput">ID</label>
+          <input type="password" class="form-control" id="formGroupExampleInput" placeholder="ID" name="id">
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-default">Crear</button>
+          </div>
+      </form>
+    </div>
+</body>
+</html>
