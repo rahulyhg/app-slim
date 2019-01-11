@@ -18,7 +18,7 @@
 
   if ($user) {
     $_SESSION['email'] = $email;
-    header("Location: http://localhost:3001/dashboard.php");
+    header("Location: http://localhost:3001/dashboard.html");
   } else {
 
     function setTimeout($fn, $timeout){

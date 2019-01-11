@@ -47,7 +47,7 @@
     for($i = 0; $i < count($data); ++$i) {
 
       echo '
-        <div class="jumbotron" style="margin-top: 1px;">
+        <div class="jumbotron" style="margin-top: 12px;">
         <div class="card" style="width: 70rem;">
         <div class="card-body">
           <h5 class="card-title"><strong>ID:</strong> ' . $data[$i]->{'id'}. "<strong> Nombre: </strong>". $data[$i]->{'username'} ."<strong> email: </strong>". $data[$i]->{'email'} .'</h5>
