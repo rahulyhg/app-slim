@@ -41,7 +41,7 @@
             <a class="nav-link" id="contact-tab" data-toggle="tab" href="/delete.html" role="tab" aria-controls="contact" aria-selected="false">Eliminar Usuarios</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" id="contact-tab" data-toggle="tab" href="/login.html" role="tab" aria-controls="contact" aria-selected="false">Cerrar sesion</a>
+            <a class="nav-link" id="contact-tab" data-toggle="tab" href="/" role="tab" aria-controls="contact" aria-selected="false">Cerrar sesion</a>
           </li>
         </ul>';
     for($i = 0; $i < count($data); ++$i) {
