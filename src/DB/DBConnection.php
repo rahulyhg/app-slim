@@ -2,15 +2,10 @@
 
 class DBConnection
 {
-  private $host = $_ENV['DB_HOST'];
-  private $database = $_ENV['DB_DATABASE'];
-  private $username = $_ENV['DB_USERNAME'];
-  private $password = $_ENV['DB_PASSWORD'];
-
   public function mConnect(){
-    $conn_mysql = "mysql:host=$this->host;dbname=$this->database";
+    $conn_mysql = "mysql:host={$_ENV['DB_HOST']};dbname={$_ENV['DB_DATABASE']}";
     
-    $connDB = new PDO($conn_mysql, $this->username, $this->password);
+    $connDB = new PDO($conn_mysql, $_ENV['DB_USERNAME'], $_ENV['DB_PASSWORD']);
     $connDB->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
     // $connDB -> exec("set names uft8");
