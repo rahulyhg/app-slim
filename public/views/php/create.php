@@ -16,6 +16,6 @@
   curl_close ($ch);
 
   $users = strrpos($remote_server_output, 'id');
-  header("Location: http://localhost:3001/php/list.php");
+  header("Location: https://app-slim.herokuapp.com/php/list.php");
   exit();
 ?>
