@@ -18,7 +18,7 @@
 
   if ($user) {
     $_SESSION['email'] = $email;
-    header("Location: http://localhost:3001/dashboard.html");
+    header("Location: http://app-slim.herokuapp.com/dashboard.html");
   } else {
 
     function setTimeout($fn, $timeout){
@@ -27,7 +27,7 @@
     }
     
     function someFunctionToExecute(){
-        header("Location: http://localhost:3001/login.html");
+        header("Location: http://app-slim.herokuapp.com/index.html");
         exit();
     }
 
