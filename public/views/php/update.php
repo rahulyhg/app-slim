@@ -7,7 +7,7 @@
   $username = $_POST['username'];
   $id = $_POST['id'];
 
-  curl_setopt($ch, CURLOPT_URL,"http://localhost:3000/api/v1/user/$id");
+  curl_setopt($ch, CURLOPT_URL,"https://api-slim-staging.herokuapp.com/api/v1/user/$id");
   curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "PUT");
   curl_setopt($ch, CURLOPT_POSTFIELDS, "email=$email&password=$password&username=$username");
 

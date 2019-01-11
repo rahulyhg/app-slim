@@ -5,7 +5,7 @@
   $email = $_POST['email'];
   $password = $_POST['password'];
 
-  curl_setopt($ch, CURLOPT_URL,"http://localhost:3000/login");
+  curl_setopt($ch, CURLOPT_URL,"https://api-slim-staging.herokuapp.com/login");
   curl_setopt($ch, CURLOPT_POST, TRUE);
   curl_setopt($ch, CURLOPT_POSTFIELDS, "email=$email&password=$password");
 
