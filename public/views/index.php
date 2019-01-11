@@ -27,7 +27,7 @@
         <p>Log In</p>
       </div>
       <?php if ($_GET['error']) {?>
-        <div class="alert alert-warning" role="alert">Usuario o contraseña invalido!</div>
+        <div class="alert alert-danger" role="alert">Usuario o contraseña invalido!</div>
       <?php } ?>
       <form class="form-horizontal" action="/php/login.php" method="post">
         <div class="form-group">
