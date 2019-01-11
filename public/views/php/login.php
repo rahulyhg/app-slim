@@ -27,7 +27,7 @@
     }
     
     function someFunctionToExecute(){
-        header("Location: http://app-slim.herokuapp.com/index.html");
+        header("Location: http://app-slim.herokuapp.com");
         exit();
     }
 
