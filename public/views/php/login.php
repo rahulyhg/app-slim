@@ -27,7 +27,7 @@
     }
     
     function someFunctionToExecute(){
-        header("Location: http://app-slim.herokuapp.com");
+        header("Location: http://app-slim.herokuapp.com?error=invalid");
         exit();
     }
 
